@@ -138,7 +138,7 @@ class BukuController extends Controller
             $error = $contentArray['data'];
             return redirect()->to('buku')->withErrors($error)->withInput();
         } else {
-            return redirect()->to('buku')->with('success', 'Data berhasil dihapus');
+            return redirect()->to('buku')->with('danger', 'Data berhasil dihapus');
         } 
     }
 }
